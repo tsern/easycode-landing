@@ -605,3 +605,8 @@ cite{
 	opacity: 1;
 	visibility: visible;
 }
+
+#map{
+	height:400px;
+	width: 100%;
+}
