@@ -530,6 +530,29 @@ cite{
 .text-center{
 	text-align: center;
 }
+.button-group{
+	text-align: center;
+}
+
+.button{
+	border: none;
+    background-color: white;
+    text-align: center;
+    font-family: dosis, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: #777777;
+    margin-bottom: 50px;
+    opacity: 0.5;
+}
+
+.button:hover{
+	color: black;
+	cursor: pointer;
+	opacity: 1;
+	transition: 0.15s;
+}
 
 /*Carousel*/
 .background-dark{
@@ -578,6 +601,43 @@ cite{
 	text-transform: uppercase;
 	display: block;
 	margin-top: 20px;
+}
+
+.owl-carousel button.owl-dot{
+	border: 3.5px solid white;
+	background-color: white;
+	width: 7px;
+	height: 7px;
+	margin: 3px;
+	border-radius: 50%;
+}
+
+.owl-carousel button.owl-dot.active{
+	border: 1px solid white;
+	width: 8px;
+	height: 8px;
+	margin: 3px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.owl-carousel .owl-dots{
+	display: flex;
+	justify-content: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	/* width: 0;
+	height: 0; */
 }
 
 .totop-button{
@@ -635,10 +695,10 @@ cite{
 }
 
 .map-overlay h3{
-	position: absolute;
+	/* position: absolute; */
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	/* transform: translate(-50%, -50%); */
 	transition: 0.3s;
 }
 
@@ -662,4 +722,40 @@ cite{
 	left: 0;
 	right: 0;
 	width: 100%;
+}
+
+.map-overlay .text-wrapper{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+}
+
+.map-overlay .text-wrapper .icon{
+	color: #222;
+	font-size: 14px;
+	line-height: 37px;
+	width: 32px;
+	position: relative;
+	margin-bottom: 28px;
+}
+
+.map-overlay .text-wrapper .icon:before{
+	z-index: 1;
+	position: relative;
+}
+
+.map-overlay .text-wrapper .icon:after{
+	content: '';
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    background-color: #fff;
+    top: 10%;
 }
