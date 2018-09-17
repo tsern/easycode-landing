@@ -325,14 +325,14 @@ h5 {
 }
 
 @media (min-width: 768px) {
-	.col-3 {
+	.col-4 {
 		width: 50%;
 		float: left;
 	}
 }
 
 @media (min-width: 1200px) {
-	.col-3 {
+	.col-4 {
 		width: 33.3333%;
 	}
 }
@@ -394,10 +394,11 @@ cite{
 
 .heading-4{
 	font-family: 'Dosis', sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 400;
 	line-height: 1.2;
 	text-transform: uppercase;
+	letter-spacing: 0.2em
 }
 
 .bg-dark {
@@ -475,6 +476,7 @@ cite{
 }
 .header-light{
 	font-weight: 300;
+	letter-spacing: 0.4em;
 }
 
 .invert *{
@@ -488,6 +490,10 @@ cite{
 
 .invert cite{
 	opacity: .3;
+}
+
+.btn a{
+	color: #111111;
 }
 
 @media (min-width: 544px){
@@ -543,7 +549,6 @@ cite{
     text-transform: uppercase;
     letter-spacing: 0.4em;
     color: #777777;
-    margin-bottom: 50px;
     opacity: 0.5;
 }
 
@@ -552,6 +557,46 @@ cite{
 	cursor: pointer;
 	opacity: 1;
 	transition: 0.15s;
+}
+
+.why-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.why-icon-block{
+	padding: 15px;
+	width: 100%;
+}
+
+@media (min-width: 544px){
+	.why-icon-block{
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px){
+	.why-icon-block {
+    width: 33.3334%;
+	}
+}
+
+.why-icon-block a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+.why-icon-block a:hover {
+	color:#777777;
+}
+
+.why-icon-block span[class*="icon"] {
+	font-size: 48px;
+	display: block;
+	margin-bottom: 28px;
 }
 
 /*Carousel*/
@@ -565,7 +610,7 @@ cite{
 }
 
 @media (min-width: 768px){
-	section-140-25{
+	.section-140-25{
 		padding-top: 140px;
 	}
 }
@@ -590,7 +635,7 @@ cite{
 
 .owl-carousel blockquote{
 	margin-top: 45px;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
 }
@@ -630,14 +675,66 @@ cite{
 	position: absolute;
 	left: 0;
 	top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	width: 45px;
+    height: 45px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-prev:before{
+    content: '\f104';
+    right: 10px;
+    top: 1px;
+    transform: rotate(-45deg);
+    position: absolute;
+    font-family: 'FontAwesome';
+    z-index: 1;
+	font-size: 16px;
+	color: #111;
 }
 
 .owl-carousel .owl-nav button.owl-next{
 	position: absolute;
 	right: 0;
-	top: 50%;
-	/* width: 0;
-	height: 0; */
+	top: 50%; 
+	transform: translate(50%, -50%) rotate(45deg);
+	width: 45px;
+    height: 45px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-next:before{
+    content: '\f105';
+    left: 10px;
+    bottom: 1px;
+    transform: rotate(-45deg);
+    position: absolute;
+    font-family: 'FontAwesome';
+    z-index: 1;
+	font-size: 16px;
+	color: #111;
+}
+
+.news-header{
+	display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.news-header a{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 12px;
+}
+
+.news-header a:after{
+	content: '\f105';
+	font-family: 'FontAwesome';
+	font-size: 16px;
+	margin-left: 5px;
 }
 
 .totop-button{
