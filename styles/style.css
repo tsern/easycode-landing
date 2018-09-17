@@ -737,6 +737,29 @@ cite{
 	margin-left: 5px;
 }
 
+h4{
+	font-size: 15px;
+	letter-spacing: 0.2em;
+}
+
+.writer{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.btn-more{
+	display: inline-block;
+	font-size: 12px;
+	padding: 8px 40px;
+	margin-top: 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	border-radius: 3px;
+	background-color: #cfcfcf;
+}
+
+
 .totop-button{
 	position: fixed;
 	right: 30px;
