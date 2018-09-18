@@ -280,7 +280,7 @@ h2{
 	}
 }
 
-.row {
+.row{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -15px;
@@ -288,29 +288,29 @@ h2{
 	margin-top: 30px;
 }
 
-.row:after {
+.row:after{
 	content: '';
 	display: table;
 	clear: both;
 }
 
-.team-member {
+.team-member{
 	padding-left: 15px;
     padding-right: 15px;
 	text-align: center;
 	padding-bottom: 10px;
 }
 
-.team-member img {
+.team-member img{
 	width: 100%
 }
 	
-h3 {
+h3{
 	color: #777777;
 	font-size: 15px;
 }
 
-h5 {
+h5{
 	color: #777777;
 	font-size: 12px;
 }
@@ -356,33 +356,33 @@ cite{
     justify-content: space-around;
 }
 
-.col-5 {
+.col-5{
 	width: 100%;
 	flex-basis: 24%;
 }
 
-.col-5 span {
+.col-5 span{
 	font-size: 50px;
 }
 
-.service-list {
+.service-list{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
 }
 
-.service-icon-block {
+.service-icon-block{
 	padding: 15px;
 }
 
-.service-icon-block a {
+.service-icon-block a{
 	display: inline-block;
 	text-decoration: none;
 	color: #777777;
 }
 
-.service-icon-block a:hover {
+.service-icon-block a:hover{
 	color:black;
 }
 
@@ -453,7 +453,7 @@ cite{
 	padding-bottom: 37px;
 }
 
-.btn {
+.btn{
 	display: inline-block;
 	font-size: 14px;
 	padding: 8px 40px;
@@ -466,12 +466,12 @@ cite{
 	background-color: #cfcfcf;
 }
 
-.btn:hover {
+.btn:hover{
 	border: 2px solid black;
 	background-color: aliceblue;
 }
 
-.bg-content h3 + p {
+.bg-content h3 + p{
 	margin-top: 18px;
 }
 .header-light{
@@ -583,13 +583,13 @@ cite{
 	}
 }
 
-.why-icon-block a {
+.why-icon-block a{
 	display: inline-block;
 	text-decoration: none;
 	color: black;
 }
 
-.why-icon-block a:hover {
+.why-icon-block a:hover{
 	color:#777777;
 }
 
@@ -737,6 +737,16 @@ cite{
 	margin-left: 5px;
 }
 
+.news-wrapper{
+	filter: grayscale(1);
+	transition: 0.2s;
+}
+
+.news-wrapper:hover{
+	filter: grayscale(0);
+	cursor: pointer;
+}
+
 h4{
 	font-size: 15px;
 	letter-spacing: 0.2em;
@@ -750,8 +760,8 @@ h4{
 .btn-more{
 	display: inline-block;
 	font-size: 12px;
-	padding: 8px 40px;
-	margin-top: 35px;
+	padding: 6px 25px;
+	margin-top: 25px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -759,6 +769,84 @@ h4{
 	background-color: #cfcfcf;
 }
 
+.btn-more:hover{
+	border: 2px solid black;
+    background-color: aliceblue;
+}
+
+.btn-more:after{
+	content: '\f105';
+	font-family: 'FontAwesome';
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.grey-bg{
+	background-color: #f8f8f8;
+}
+
+.form-content{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.grey-bg input{
+    font-size: 12px;
+    font-weight: normal;
+    color: #616161;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    box-shadow: none;
+    padding: 12px 125px 12px 12px;
+    border-radius: 3px;
+    transition: 0.3s ease-out all;
+}
+
+.grey-bg button{
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	outline: none;
+	box-shadow: none;
+	padding: 12px;
+	border: 1px solid #111111;
+	background-color: #111111;
+	opacity: 0.8;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: 0.3s ease-out all;
+}
+
+.grey-bg input:hover{
+	border: 1px solid black;
+}
+
+.grey-bg button:hover{
+	background-color: grey;
+	color: black;
+}
+
+h3{
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+}
+
+.form-content form{
+	margin-top: 20px;
+}
+
+.info{
+	font-size: 12px;
+	color: #c1c1c1;
+}
+
+.info:before{
+	content: '\f05a';
+	font-family: 'FontAwesome';
+	margin-right: 3px;
+}
 
 .totop-button{
 	position: fixed;
