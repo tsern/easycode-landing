@@ -237,10 +237,6 @@ h1{
 		letter-spacing: 1.2em;
 	}
 }
-h5{
-	font-size: 18px;
-	color: #cecece;
-}
 
 .container{
 	margin-left: auto;
@@ -314,6 +310,7 @@ h3{
 h5{
 	color: #777777;
 	font-size: 12px;
+	letter-spacing: 0.3em;
 }
 
 [class*="col-"] {
@@ -404,7 +401,6 @@ cite{
 
 .bg-dark {
 	padding-bottom: 25px;
-	margin-top: 55px;
 	background-color: #111111;
 }
 
@@ -497,10 +493,6 @@ cite{
 	color: #000;
 }
 
-/* .btn a{
-	color: #111111;
-} */
-
 @media (min-width: 544px){
 	.col-6 {
 	width: 50%;
@@ -509,6 +501,38 @@ cite{
 }
 
 /*Isotope*/
+
+.section-138-80{
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+	@media (min-width: 768px){
+	.section-138-80{
+		padding-top: 140px;
+		padding-bottom: 80px;
+	}
+}
+
+.portfolio p{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 992px){
+	.portfolio p{
+		width: 66%;
+	}
+}
+
+.offset-bottom-78{
+	padding-bottom: 40px;
+}
+
+@media (min-width: 768px){
+	.offset-bottom-78{
+		padding-bottom: 78px;
+	}
+}
 
 .grid{
 	display: flex;
@@ -543,6 +567,13 @@ cite{
 }
 .button-group{
 	text-align: center;
+	margin-bottom: 25px;
+}
+
+@media (min-width: 992px){
+	.button-group{
+		margin-bottom: 50px;
+	}
 }
 
 .button{
@@ -874,10 +905,6 @@ h3{
 	}
 }
 
-.margin-15{
-	margin: -15px;
-}
-
 .space-between{
 	justify-content: space-between;
 }
@@ -1028,11 +1055,16 @@ h3{
 }
 
 .map-overlay h3{
-	/* position: absolute; */
 	top: 50%;
 	left: 50%;
-	/* transform: translate(-50%, -50%); */
 	transition: 0.3s;
+}
+
+.map-overlay h3:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+	margin-left: 5px;
 }
 
 .map-overlay h3:before{
